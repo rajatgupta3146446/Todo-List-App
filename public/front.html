@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<title>My Todos</title>
+</head>
+<body>
+
+<div style="background-color: #fff6a1; height: 70px; padding-top: 5px " ><center> <h1>My Todos</h1></center></div>
+
+<div style="padding-top: 20px; padding-left: 50px"> <h2>Active Todos</h2> </div>
+<!--<div id="activetodolist"   style="padding-left :50px"></div>-->
+
+<table id="activetodolist"  style="padding-left :100px" width="500px">
+
+</table>
+
+
+<div style="border: 1px solid black "> </div>
+
+<div style="color: darkgray; padding-left: 50px" ><h2>ADD TODO</h2></div>
+<div style="padding-left:50px ">
+  <!-- <form id="addtodo" method="post" action="addtodoajax()">
+        <input style="border: none; border-bottom:1px solid slategray ;" type="text" placeholder="Todo title goes here"/>
+    <button  style="background-color: #99cafb; border: none;border-radius:5px;  height: 30px; width: 50px">ADD</button>
+    </form>-->
+
+    <input id="addtodo" style="border: none; border-bottom:1px solid slategray ;" type="text" placeholder="Todo title goes here"/>
+    <button onclick=addtodoajax() style="background-color: #99cafb; border: none;border-radius:5px;  height: 30px; width: 50px">ADD</button>
+</div>
+
+<div style="border: 1px solid black "> </div>
+<div style="margin-top:20px; padding-left: 50px"> <span style="font-size:22px"><b>Completed Todos</b></span><a  id="hideo" style="float:right ; cursor: pointer" ;  onclick="functionhideshowc()"><u >Hide Completed Items</u></a> </div>
+<TABLE id="completedtodolist"  style="padding-left:100px; padding-top: 20px"; width=500px></TABLE>
+
+<div style="border: 1px solid black "> </div>
+<div style="margin-top:20px; padding-left: 50px"> <span style="font-size:22px"><b>Deleted Todos</b></span><a id="hided"style="float:right ; cursor: pointer" ;  onclick="functionhideshowd()"><u>Hide Deleted Items</u></a> </div>
+<TABLE id="Deletedtodolist" style="padding-left:210px; padding-top: 20px;" width=500px></TABLE>
+
+<script src="./script.js"></script>
+</body>
+</html>
